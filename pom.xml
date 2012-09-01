@@ -53,7 +53,7 @@
 	</issueManagement>
 
 	<modules>
-
+		<module>jsf</module>
 	</modules>
  
 	<dependencyManagement>
