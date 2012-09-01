@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+    	<groupId>org.sonatype.oss</groupId>
+    	<artifactId>oss-parent</artifactId>
+    	<version>7</version>
+	</parent>
+	     
+	<groupId>net.sf.gravatarjsf</groupId>
+	<artifactId>gravatarjsf</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+    <packaging>pom</packaging>
+    <name>GravatarJSF</name>
+	<url>https://sourceforge.net/projects/gravatarjsf</url>
+
+	<properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <!-- Timestamp format for the maven.build.timestamp property -->
+        <!-- You can reference property in pom.xml or filtered resources (must enable third-party plugin if using Maven < 2.1) -->
+        <maven.build.timestamp.format>yyyyMMdd'T'HHmmss</maven.build.timestamp.format>
+    </properties>
+
+	<licenses>
+		<license>
+			<name>GNU General Public License</name>
+			<url>http://www.gnu.org/licenses/gpl-3.0.txt</url>
+			<distribution>repo</distribution>
+		</license>
+	</licenses>
+
+	<scm>
+		<connection>scm:svn:https://svn.code.sf.net/p/gravatarjsf/code/trunk</connection>
+		<developerConnection>scm:svn:https://svn.code.sf.net/p/gravatarjsf/code/trunk/</developerConnection>
+		<url>https://svn.code.sf.net/p/gravatarjsf/code/trunk/</url>
+	</scm>
+	
+	<developers>
+		<developer>
+			<id>1</id>
+			<name>Thorsten Kisner</name>
+			<email>thorsten-k@sourceforge.net</email>
+		</developer>
+	</developers>
+
+	<prerequisites>
+		<maven>2.0.9</maven>
+	</prerequisites>
+
+	
+	<issueManagement>
+	</issueManagement>
+
+	<modules>
+
+	</modules>
+ 
+	<dependencyManagement>
+		<dependencies>
+		</dependencies>
+	</dependencyManagement>
+	
+	<repositories>
+       
+        <repository>
+			<id>sonatype.snapshot</id>
+			<name>Sonatype Snapshot Repository</name>
+			<url>https://oss.sonatype.org/content/repositories/snapshots/</url>
+			<releases><enabled>false</enabled></releases>
+			<snapshots><enabled>true</enabled></snapshots>
+		</repository>
+    </repositories>
+
+</project>
