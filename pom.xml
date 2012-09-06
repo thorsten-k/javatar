@@ -59,6 +59,22 @@
  
 	<dependencyManagement>
 		<dependencies>
+			<dependency>
+				<groupId>net.sf.gravatarjsf</groupId>
+				<artifactId>gravatarjsf-util</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>net.sf.gravatarjsf</groupId>
+				<artifactId>gravatarjsf-jsf</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			
+			<dependency>
+			    <groupId>com.sun.faces</groupId>
+			    <artifactId>jsf-api</artifactId>
+			    <version>2.1.0</version>
+			</dependency>
 		</dependencies>
 	</dependencyManagement>
 	
