@@ -12,7 +12,6 @@ public class Gravatar extends UINamingContainer
 	
 	public String urlForMail(String email)
 	{
-		System.out.println("urlForMail "+email);
 		StringBuffer sb = new StringBuffer();
 		sb.append(gHostSecure);
 		sb.append("/avatar/");
