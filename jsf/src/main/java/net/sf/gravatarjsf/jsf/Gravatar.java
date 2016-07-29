@@ -3,7 +3,7 @@ package net.sf.gravatarjsf.jsf;
 import javax.faces.component.FacesComponent;
 import javax.faces.component.UINamingContainer;
 
-import net.sf.gravatarjsf.util.GravatarHash;
+import de.kisner.github.javatar.util.GravatarHash;
 
 @FacesComponent(value="net.sf.gravatarjsf.jsf.Gravatar")
 public class Gravatar extends UINamingContainer 

@@ -1,4 +1,4 @@
-package net.sf.gravatarjsf.test;
+package de.kisner.gitbub.javatar;
 
 import java.util.Random;
 

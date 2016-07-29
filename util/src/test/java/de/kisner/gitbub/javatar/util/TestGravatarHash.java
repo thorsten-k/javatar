@@ -1,12 +1,14 @@
-package net.sf.gravatarjsf.util;
+package de.kisner.gitbub.javatar.util;
 
 import junit.framework.Assert;
-import net.sf.gravatarjsf.test.AbstractGravatarUtilTest;
 
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
+import de.kisner.gitbub.javatar.AbstractGravatarUtilTest;
+import de.kisner.github.javatar.util.GravatarHash;
 
 public class TestGravatarHash extends AbstractGravatarUtilTest
 {
