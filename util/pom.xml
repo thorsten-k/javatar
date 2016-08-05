@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 	
 	<parent>
-	<groupId>net.sf.gravatarjsf</groupId>
-	<artifactId>gravatarjsf</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+		<groupId>de.kisner.javatar</groupId>
+		<artifactId>javatar</artifactId>
+		<version>0.0.1-SNAPSHOT</version>
 	</parent>
 	
-    <artifactId>gravatarjsf-util</artifactId>
+    <artifactId>javatar-util</artifactId>
     <name>GravatarJSF - Util</name>
 	<packaging>jar</packaging>
 	

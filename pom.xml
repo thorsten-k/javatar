@@ -8,8 +8,8 @@
     	<version>7</version>
 	</parent>
 	     
-	<groupId>net.sf.gravatarjsf</groupId>
-	<artifactId>gravatarjsf</artifactId>
+	<groupId>de.kisner.javatar</groupId>
+	<artifactId>javatar</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
     <packaging>pom</packaging>
     <name>GravatarJSF</name>
@@ -60,13 +60,13 @@
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>net.sf.gravatarjsf</groupId>
-				<artifactId>gravatarjsf-util</artifactId>
+				<groupId>de.kisner.javatar</groupId>
+				<artifactId>javatar-util</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			<dependency>
-				<groupId>net.sf.gravatarjsf</groupId>
-				<artifactId>gravatarjsf-jsf</artifactId>
+				<groupId>de.kisner.javatar</groupId>
+				<artifactId>javatar-jsf</artifactId>
 				<version>${project.version}</version>
 			</dependency>
 			
