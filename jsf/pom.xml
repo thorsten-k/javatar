@@ -9,7 +9,7 @@
 	</parent>
 	
     <artifactId>javatar-jsf</artifactId>
-    <name>GravatarJSF - JSF</name>
+    <name>Javatar - JSF</name>
 	<packaging>jar</packaging>
 	
 	<dependencies>
@@ -22,5 +22,4 @@
 		    <artifactId>javatar-util</artifactId>
 		</dependency>
 	</dependencies>
-	
 </project>
