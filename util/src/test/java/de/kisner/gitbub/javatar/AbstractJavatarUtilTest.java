@@ -2,23 +2,26 @@ package de.kisner.gitbub.javatar;
 
 import java.util.Random;
 
-import net.sf.exlp.util.io.LoggerInit;
-
 import org.junit.BeforeClass;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class AbstractGravatarUtilTest
+import net.sf.exlp.util.io.LoggerInit;
+
+public class AbstractJavatarUtilTest
 {
-	final static Logger logger = LoggerFactory.getLogger(AbstractGravatarUtilTest.class);
+	final static Logger logger = LoggerFactory.getLogger(AbstractJavatarUtilTest.class);
 	
 	@BeforeClass
     public static void initLogger()
 	{
 		LoggerInit loggerInit = new LoggerInit("log4junit.xml");	
-		loggerInit.addAltPath("config.gravatarjsf-util");
+		loggerInit.addAltPath("javatar/config.test");
 		loggerInit.init();
     }
+	
+	@Test public void preventInitializationError(){}
 	
 	protected int rndI()
 	{

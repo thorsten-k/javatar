@@ -1,16 +1,15 @@
 package de.kisner.gitbub.javatar.util;
 
-import junit.framework.Assert;
-
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.kisner.gitbub.javatar.AbstractGravatarUtilTest;
+import de.kisner.gitbub.javatar.AbstractJavatarUtilTest;
 import de.kisner.github.javatar.util.GravatarHash;
 
-public class TestGravatarHash extends AbstractGravatarUtilTest
+public class TestGravatarHash extends AbstractJavatarUtilTest
 {
 	final static Logger logger = LoggerFactory.getLogger(TestGravatarHash.class);   
   
