@@ -15,8 +15,10 @@
 	</modules>
 
 	<properties>
+		<my.build.directory>target</my.build.directory>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<maven.build.timestamp.format>yyyyMMdd'T'HHmmss</maven.build.timestamp.format>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<maven.ignore>file://${basedir}/src/main/resources/javatar/maven/ignore-versions.xml</maven.ignore>
     </properties>
 
 	<prerequisites>
@@ -96,7 +98,7 @@
 	<build>
 		<pluginManagement>
 			<plugins>
-      			<plugin>
+      		<plugin>
 			        <groupId>org.codehaus.mojo</groupId>
 			        <artifactId>versions-maven-plugin</artifactId>
 			        <version>2.2</version>
