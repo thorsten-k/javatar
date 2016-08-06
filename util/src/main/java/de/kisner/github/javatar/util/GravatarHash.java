@@ -4,8 +4,13 @@ import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 public class GravatarHash
 {
+	private final static Logger logger = LoggerFactory.getLogger(GravatarHash.class);
+	
 	 public static String hex(byte[] array)
 	 {
 	      StringBuffer sb = new StringBuffer();
@@ -23,8 +28,8 @@ public class GravatarHash
 	    	  MessageDigest md = MessageDigest.getInstance("MD5");
 	    	  return hex (md.digest(message.getBytes("CP1252")));
 	      }
-	      catch (NoSuchAlgorithmException e) {}
-	      catch (UnsupportedEncodingException e) {}
+	      catch (NoSuchAlgorithmException e) {logger.warn(e.getMessage());}
+	      catch (UnsupportedEncodingException e) {logger.warn(e.getMessage());}
 	      return null;
 	  }
 }
