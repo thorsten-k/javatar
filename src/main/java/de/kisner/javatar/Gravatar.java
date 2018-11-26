@@ -1,11 +1,9 @@
-package net.sf.gravatarjsf.jsf;
+package de.kisner.javatar;
 
 import javax.faces.component.FacesComponent;
 import javax.faces.component.UINamingContainer;
 
-import de.kisner.github.javatar.util.GravatarHash;
-
-@FacesComponent(value="net.sf.gravatarjsf.jsf.Gravatar")
+@FacesComponent(value="de.kisner.javatar.Gravatar")
 public class Gravatar extends UINamingContainer 
 {
 	private static final String gHostSecure = "https://secure.gravatar.com";
@@ -33,6 +31,5 @@ public class Gravatar extends UINamingContainer
 		sb.append("&d=identicon");
 		
 		return sb.toString();
-
 	}
 }
