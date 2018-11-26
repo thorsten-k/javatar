@@ -5,7 +5,7 @@
 	<groupId>de.kisner</groupId>
 	<artifactId>javatar</artifactId>
 	<version>0.0.2-SNAPSHOT</version>
-    <packaging>pom</packaging>
+    <packaging>jar</packaging>
     <name>Javatar</name>
 	<url>https://github.com/thorsten-k/javatar</url>
 
@@ -90,10 +90,38 @@
 		</dependencies>
 	</dependencyManagement>
 	
+	<dependencies>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-log4j12</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>net.sf.exlp</groupId>
+			<artifactId>exlp-util</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+	
 	<build>
 		<pluginManagement>
 			<plugins>
-      		<plugin>
+				<plugin>
 			        <groupId>org.codehaus.mojo</groupId>
 			        <artifactId>versions-maven-plugin</artifactId>
 			        <version>2.2</version>

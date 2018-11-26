@@ -1,4 +1,4 @@
-package de.kisner.gitbub.javatar.util;
+package de.kisner.javatar;
 
 import org.junit.Assert;
 import org.junit.Before;
@@ -6,10 +6,7 @@ import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import de.kisner.gitbub.javatar.AbstractJavatarUtilTest;
-import de.kisner.github.javatar.util.GravatarHash;
-
-public class TestGravatarHash extends AbstractJavatarUtilTest
+public class TestGravatarHash extends AbstractJavatarTest
 {
 	final static Logger logger = LoggerFactory.getLogger(TestGravatarHash.class);   
   
@@ -18,14 +15,21 @@ public class TestGravatarHash extends AbstractJavatarUtilTest
 	@Before
 	public void init()
 	{
-		email = "someone@somewhere.com";
-		expected = "923d10bc97028030e8e67e7db62658d1";
+		email = "t.kisner@aht-group.com";
+		expected = "d8f5709bb9d94422db6e8d300f4a3a7a";
 	}
 	
     @Test
-    public void hash()
+    public void hashMd5()
     {
     	String actual = GravatarHash.md5Hex(email);
+    	Assert.assertEquals(expected, actual);
+    }
+    
+    @Test
+    public void hashDirect()
+    {
+    	String actual = GravatarHash.hex(email);
     	Assert.assertEquals(expected, actual);
     }
 }

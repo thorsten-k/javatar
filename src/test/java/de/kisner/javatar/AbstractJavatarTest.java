@@ -1,4 +1,4 @@
-package de.kisner.gitbub.javatar;
+package de.kisner.javatar;
 
 import java.util.Random;
 
@@ -9,15 +9,15 @@ import org.slf4j.LoggerFactory;
 
 import net.sf.exlp.util.io.LoggerInit;
 
-public class AbstractJavatarUtilTest
+public class AbstractJavatarTest
 {
-	final static Logger logger = LoggerFactory.getLogger(AbstractJavatarUtilTest.class);
+	final static Logger logger = LoggerFactory.getLogger(AbstractJavatarTest.class);
 	
 	@BeforeClass
     public static void initLogger()
 	{
 		LoggerInit loggerInit = new LoggerInit("log4junit.xml");	
-		loggerInit.addAltPath("javatar/config.test");
+		loggerInit.addAltPath("javatar/config");
 		loggerInit.init();
     }
 	
