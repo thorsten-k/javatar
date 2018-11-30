@@ -18,7 +18,6 @@ public class Gravatar extends UINamingContainer
 		sb.append("&d=identicon");
 		
 		return sb.toString();
-
 	}
 	
 	public String urlForHash(String hash)
