@@ -44,82 +44,44 @@
 	
 	<issueManagement>
 	</issueManagement>
- 
-	<dependencyManagement>
-		<dependencies>
-			<dependency>
-				<groupId>de.kisner.javatar</groupId>
-				<artifactId>javatar-util</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			<dependency>
-				<groupId>de.kisner.javatar</groupId>
-				<artifactId>javatar-jsf</artifactId>
-				<version>${project.version}</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>net.sf.exlp</groupId>
-				<artifactId>exlp-util</artifactId>
-				<version>0.1.11</version>
-			</dependency>
-			
-			<dependency>
-			    <groupId>com.sun.faces</groupId>
-			    <artifactId>jsf-api</artifactId>
-			    <version>2.2.13</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-api</artifactId>
-				<version>1.7.21</version>
-			</dependency>
-			<dependency>
-				<groupId>org.slf4j</groupId>
-				<artifactId>slf4j-log4j12</artifactId>
-				<version>1.7.21</version>
-			</dependency>
-			
-			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.12</version>
-			</dependency>
-	
-		</dependencies>
-	</dependencyManagement>
 	
 	<dependencies>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-api</artifactId>
+			<version>1.7.21</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
 			<version>2.4</version>
+			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
 		    <groupId>com.sun.faces</groupId>
 		    <artifactId>jsf-api</artifactId>
+		    <version>2.2.13</version>
 		    <scope>provided</scope>
 		</dependency>
 		
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
+			<version>4.12</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.slf4j</groupId>
 			<artifactId>slf4j-log4j12</artifactId>
+			<version>1.7.21</version>
 			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>net.sf.exlp</groupId>
 			<artifactId>exlp-util</artifactId>
+			<version>0.1.11</version>
 			<scope>test</scope>
 		</dependency>
 	</dependencies>
