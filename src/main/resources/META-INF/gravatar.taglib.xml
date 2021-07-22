@@ -4,5 +4,5 @@
     xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
         http://java.sun.com/xml/ns/javaee/web-facelettaglibrary_2_0.xsd">
  <namespace>http://gravatarjsf.sf.net</namespace> 
- <composite-library-name>gjsf</composite-library-name> 
+ <composite-library-name>gravatar</composite-library-name> 
  </facelet-taglib> 
