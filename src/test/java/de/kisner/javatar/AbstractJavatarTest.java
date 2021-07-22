@@ -2,8 +2,8 @@ package de.kisner.javatar;
 
 import java.util.Random;
 
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.jupiter.api.BeforeAll;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,7 +13,7 @@ public class AbstractJavatarTest
 {
 	final static Logger logger = LoggerFactory.getLogger(AbstractJavatarTest.class);
 	
-	@BeforeClass
+	@BeforeAll
     public static void initLogger()
 	{
 		LoggerInit loggerInit = new LoggerInit("log4junit.xml");	

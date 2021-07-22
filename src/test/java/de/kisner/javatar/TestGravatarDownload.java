@@ -6,9 +6,9 @@ import java.io.IOException;
 import java.net.MalformedURLException;
 
 import org.apache.commons.io.IOUtils;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -18,10 +18,10 @@ public class TestGravatarDownload extends AbstractJavatarTest
   
 	private String email,expected;
 	
-	@Before
+	@BeforeEach
 	public void init()
 	{
-		email = "t.kisner@aht-group.com";
+		email = "test@email";
 		expected = "d8f5709bb9d94422db6e8d300f4a3a7a";
 	}
 	
@@ -29,14 +29,14 @@ public class TestGravatarDownload extends AbstractJavatarTest
     public void hashMd5()
     {
     	String actual = GravatarHash.md5Hex(email);
-    	Assert.assertEquals(expected, actual);
+    	Assertions.assertEquals(expected, actual);
     }
     
     @Test
     public void hashDirect()
     {
     	String actual = GravatarHash.hex(email);
-    	Assert.assertEquals(expected, actual);
+    	Assertions.assertEquals(expected, actual);
     }
     
     public static void main(String args[]) throws MalformedURLException, IOException
